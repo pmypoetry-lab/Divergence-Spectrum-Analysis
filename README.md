@@ -161,6 +161,7 @@ This will output three key visualizations:
 ## 引用
 Please cite as:
 **P & Y (2025). Divergence Spectrum Analysis (DSA). PMY Poetic Intelligence Project.**
+
 **PとY（2025）『Divergence Spectrum Analysis（DSA）』PMY詩的知性プロジェクト**
 
 
