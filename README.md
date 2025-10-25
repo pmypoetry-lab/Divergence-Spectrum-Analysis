@@ -3,9 +3,8 @@
 Divergence Spectrum Analysis (DSA) — A poetic-mathematical framework for visualizing semantic divergence in multi-model outputs.
 Developed within the PMY Field, DSA measures and renders the dynamics of polysemy, condensation, and poetic margin energy through dispersion trajectories, normalized energies, and phase diagrams.
 
-Repository: poetic-waveform-dsa  
+Repository: [pmypoetry-lab/Divergence-Spectrum-Analysis](https://github.com/pmypoetry-lab/Divergence-Spectrum-Analysis)  
 
-Language: Python  
 Core modules: dispersion_waves_full.py, poetic_phase_diagram.py  
 Author: P & Y (PMY Poetic Intelligence Project)  
 
