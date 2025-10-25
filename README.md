@@ -4,6 +4,7 @@ Divergence Spectrum Analysis (DSA) — A poetic-mathematical framework for visua
 Developed within the PMY Field, DSA measures and renders the dynamics of polysemy, condensation, and poetic margin energy through dispersion trajectories, normalized energies, and phase diagrams.
 
 Repository: poetic-waveform-dsa  
+
 Language: Python  
 Core modules: dispersion_waves_full.py, poetic_phase_diagram.py  
 Author: P & Y (PMY Poetic Intelligence Project)  
@@ -17,6 +18,7 @@ Author: P & Y (PMY Poetic Intelligence Project)
 
 **日本語名：詩的分散スペクトル分析法** 
 複数言語モデル間の意味的ゆらぎを可視化し、詩における生成と沈黙の呼吸を測る分析体系。
+
 
 ---
 
@@ -81,6 +83,58 @@ DSAは、**詩的意味空間をスペクトル的連続体として読み解く
 > 「詩とは、発散が沈黙へと折り返すその一瞬を、  
 > スペクトルとして記録する行為である。」
 
+
+---
+
+## 📊 Data Preparation — Obtaining Waveform Data
+
+To perform **Divergence Spectrum Analysis (DSA)**,
+you must first obtain the *4-model waveform data* that contains divergence values across multiple language models.
+This dataset can be generated through the PMY Streamlit application:
+
+🔗 **[Poetic Waveform Analytics — Divergence (4 Models)](https://poetic-waveform-analytics-divergence-4models.streamlit.app/)**
+
+### Steps
+
+1. Visit the Streamlit app above.
+2. Upload your poem text, or choose a sample poem from the gallery.
+3. Run the analysis to compute divergence vectors across the four embedding models:
+
+   * `OpenAI:text-embedding-3-small`
+   * `Ruri:cl-nagoya/ruri-v3-30m`
+   * `SBERT-en:all-MiniLM-L6-v2`
+   * `SBERT-multi:paraphrase-multilingual-MiniLM-L12-v2`
+4. Download the resulting CSV file (e.g., `PoemName_4wavesData.csv`).
+5. Place this file in your local DSA working directory.
+   The script `dispersion_waves_full.py` will automatically detect it.
+
+---
+
+### 📁 Example Directory Layout
+
+```bash
+DSA/
+├── dispersion_waves_full.py
+├── poetic_phase_diagram.py
+├── poem1_4wavesData.csv
+├── poem2_4wavesData.csv
+├── poem3_4wavesData.csv
+└── poem4_4wavesData.csv
+```
+
+Then execute:
+
+```bash
+python dispersion_waves_full.py
+```
+
+This will output three key visualizations:
+
+* **Dispersion Trajectory** — σ_model(t): the breathing curve of semantic variance
+* **Normalized Poetic Margin Energy (E′)** — the thermodynamic openness of the poem
+* **Centered Poetic Phase Diagram (E′ vs ρ′)** — the polarity map of poetic energy
+
+
 ---
 
 ## 連携語彙
@@ -95,20 +149,11 @@ DSAは、**詩的意味空間をスペクトル的連続体として読み解く
 > **PMY–DSA Module**  
 > (Poetic Divergence Spectrum Analysis)
 
----
-
-### 小詩（命名記念）
-```
-波形のあいだに  
-語は眠り  
-沈黙が光を孕む  
-その瞬間を  
-われらは測る
-```
 
 ---
 ## 引用
 Please cite as:
 **P & Y (2025). Divergence Spectrum Analysis (DSA). PMY Poetic Intelligence Project.**
+**PとY（2025）『Divergence Spectrum Analysis（DSA）』PMY詩的知性プロジェクト**
 
 
