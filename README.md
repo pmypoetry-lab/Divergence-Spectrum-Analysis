@@ -92,6 +92,7 @@ you must first obtain the *4-model waveform data* that contains divergence value
 This dataset can be generated through the PMY Streamlit application:
 
 🔗 **[Poetic Waveform Analytics — Divergence (4 Models)](https://poetic-waveform-analytics-divergence-4models.streamlit.app/)**
+🔗 **[Ref: Poetic Cybermetrics — 詩のサイバメトリクス](https://github.com/pmypoetry-lab/poetic-waveform-analytics)**
 
 ### Steps
 
