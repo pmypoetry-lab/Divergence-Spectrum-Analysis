@@ -75,9 +75,9 @@ E′が低い詩は、構文的・意味的収束が強く、沈黙や明晰性�
 ## 理論的位置
 
 DSAは、**詩的意味空間をスペクトル的連続体として読み解く**  
-初の数理詩学的分析体系である。  
+数理詩学的分析の試みである。  
 それはPMYフィールドにおける**生成詩学・認識詩学・熱力詩学**の三領域を媒介し、  
-意味と沈黙の往還を一つの位相現象として捉える。
+意味と沈黙の往還を一つの位相現象として捉えるものである。
 
 > 「詩とは、発散が沈黙へと折り返すその一瞬を、  
 > スペクトルとして記録する行為である。」
@@ -92,6 +92,7 @@ you must first obtain the *4-model waveform data* that contains divergence value
 This dataset can be generated through the PMY Streamlit application:
 
 🔗 **[Poetic Waveform Analytics — Divergence (4 Models)](https://poetic-waveform-analytics-divergence-4models.streamlit.app/)**
+
 🔗 **[Ref: Poetic Cybermetrics — 詩のサイバメトリクス](https://github.com/pmypoetry-lab/poetic-waveform-analytics)**
 
 ### Steps
