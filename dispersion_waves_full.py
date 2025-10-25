@@ -32,20 +32,20 @@ def load_models_only(path):
 
 # Load four poems’ divergence data
 mugen_sigma = load_models_only("MugenEn_4wavesData.csv")
-kimi_sigma  = load_models_only("IbutsuKimi_4wavesData.csv")
-sky_sigma   = load_models_only("SkyBornWords_4wavesData.csv")
-shomei_sigma = load_models_only("MugenShomei_4wavesData.csv")
+poem2_sigma  = load_models_only("poem2_4wavesData.csv")
+poem3_sigma   = load_models_only("poem3_4wavesData.csv")
+poem4_sigma = load_models_only("poem4_4wavesData.csv")
 
 # --- Dispersion Trajectory Plot ---
 plt.figure(figsize=(10,5))
 plt.plot(range(1, len(mugen_sigma)+1), mugen_sigma,
          label="MugenEn (Infinite Contact)", color="#1f77b4", alpha=0.9)
-plt.plot(range(1, len(kimi_sigma)+1), kimi_sigma,
-         label="IbutsuKimi (Alien/You/Experience)", color="#ff7f0e", alpha=0.9)
-plt.plot(range(1, len(sky_sigma)+1), sky_sigma,
-         label="SkyBornWords", color="#2ca02c", alpha=0.9)
-plt.plot(range(1, len(shomei_sigma)+1), shomei_sigma,
-         label="MugenShomei (Proof of Infinity)", color="#9467bd", alpha=0.9)
+plt.plot(range(1, len(poem2_sigma)+1), poem2_sigma,
+         label="poem2 (Alien/You/Experience)", color="#ff7f0e", alpha=0.9)
+plt.plot(range(1, len(poem3_sigma)+1), poem3_sigma,
+         label="poem3", color="#2ca02c", alpha=0.9)
+plt.plot(range(1, len(poem4_sigma)+1), poem4_sigma,
+         label="poem4 (Proof of Infinity)", color="#9467bd", alpha=0.9)
 
 plt.title("Dispersion Trajectory — True Instantaneous σ_model(t)")
 plt.xlabel("Line Number (Poetic Progression)")
@@ -62,9 +62,9 @@ plt.close()
 
 E_norm = {
     "MugenEn": mugen_sigma.sum() / len(mugen_sigma),
-    "IbutsuKimi": kimi_sigma.sum() / len(kimi_sigma),
-    "SkyBornWords": sky_sigma.sum() / len(sky_sigma),
-    "MugenShomei": shomei_sigma.sum() / len(shomei_sigma)
+    "poem2": poem2_sigma.sum() / len(poem2_sigma),
+    "poem3": poem3_sigma.sum() / len(poem3_sigma),
+    "poem4": poem4_sigma.sum() / len(poem4_sigma)
 }
 rho_norm = {name: 1 / E for name, E in E_norm.items()}
 
